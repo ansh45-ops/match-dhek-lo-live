@@ -1,0 +1,67 @@
+MATCH DEKHO — SEO UPGRADE
+=========================
+Included:
+- Unique descriptive title and meta description
+- Robots directives and social sharing (Open Graph / Twitter) metadata
+- WebSite and FAQPage structured data (JSON-LD)
+- Crawlable, useful page copy about cricket, sports and live TV categories
+- Semantic headings, accessible FAQ accordions, language/locale metadata
+- robots.txt and sitemap.xml starter files
+
+IMPORTANT — COMPLETE THESE BEFORE LAUNCH:
+1. Set the real public website domain. Add a canonical URL in <head>:
+   <link rel="canonical" href="https://YOUR-REAL-DOMAIN/">
+2. Replace the sitemap.xml placeholder with the real homepage URL.
+3. Add the real sitemap URL to robots.txt.
+4. Create a genuine 1200x630 social sharing image and add og:image and
+   twitter:image tags. Do not use a logo or artwork you do not own.
+5. Verify the domain in Google Search Console and Bing Webmaster Tools;
+   submit sitemap.xml and inspect the homepage.
+6. Ensure the site is publicly accessible over HTTPS, returns HTTP 200,
+   and is not blocked by hosting-level robots/noindex settings.
+7. Keep page text truthful. Do not claim every match, every channel, or
+   guaranteed free access. Search engines may ignore meta keywords and
+   structured data does not guarantee rich results or rankings.
+
+SEO cannot guarantee #1 rankings or instant indexing. Rankings depend on
+the real domain, useful original content, reputation, technical performance,
+links, competition, and ongoing updates. Do not publish misleading claims
+such as "all cricket free" if broadcast rights/access do not support them.
+
+
+GOOGLE SEARCH CONSOLE HTML FILE VERIFICATION
+============================================
+Added the Google verification file:
+  google189bf88c1d3daa62.html
+
+Its content is the exact token supplied in the uploaded file:
+  google-site-verification: google189bf88c1d3daa62.html
+
+DEPLOYMENT STEPS:
+1. Extract this ZIP.
+2. Deploy the CONTENTS of the Match-Dekho folder as your website's document
+   root / publish directory. Do not place them inside an extra nested folder.
+3. Keep index.html and google189bf88c1d3daa62.html side by side in the website root.
+4. Test this URL in a browser:
+   https://YOUR-DOMAIN/google189bf88c1d3daa62.html
+   It must return HTTP 200 and display only the verification token.
+5. In Google Search Console, select HTML file verification and click Verify.
+   Keep the file on your site permanently after verification.
+
+For Netlify, deploy the extracted Match-Dekho folder containing index.html.
+For cPanel, put all files directly inside public_html.
+
+
+FINAL BRAND KEYWORD ADDITION
+============================
+Added the branded SukunaCricket landing page:
+  /sukunacricket/
+
+It is linked from the homepage and includes relevant, readable cricket
+discovery content, metadata and WebPage structured data. "SukunaCricket"
+is a suggested brand phrase, not a verified unused keyword and not a
+guaranteed ranking shortcut. Search engines decide indexing and rankings.
+
+Before launch, replace YOUR-DOMAIN placeholders in sitemap/robots and add
+canonical URLs for both the homepage and /sukunacricket/ once the final
+domain is known.
