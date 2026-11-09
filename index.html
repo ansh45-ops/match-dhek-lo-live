@@ -2,55 +2,171 @@
 <html lang="en-IN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#080608">
-<meta name="description" content="SukunaCricket by Match Dekho: discover cricket coverage, sports TV channels, match schedules and official ways to follow live cricket.">
-<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="description" content="Match Dekho and SukunaCricket help you explore available cricket coverage, sports, live TV channels, news, movies and entertainment.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="googlebot" content="index,follow">
+<meta name="application-name" content="Match Dekho">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Match Dekho">
-<meta property="og:title" content="SukunaCricket – Cricket Coverage & Sports TV | Match Dekho">
-<meta property="og:description" content="Discover cricket coverage, sports channels and match-day viewing information from SukunaCricket by Match Dekho.">
-<title>SukunaCricket – Cricket Coverage & Sports TV | Match Dekho</title>
-<link rel="stylesheet" href="../style.css">
+<meta property="og:title" content="Match Dekho | SukunaCricket – Cricket & Live TV Channels">
+<meta property="og:description" content="Browse live TV channels on Match Dekho, including sports and cricket coverage, news, movies and entertainment. Stream availability depends on each broadcaster.">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Match Dekho | SukunaCricket – Cricket & Live TV Channels">
+<meta name="twitter:description" content="Explore sports, cricket coverage and live TV channels on Match Dekho. Availability varies by broadcaster and region.">
+<title>Match Dekho – Live Cricket, Sports & Free TV Channels Online</title>
+<link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"WebPage",
-  "name":"SukunaCricket – Cricket Coverage & Sports TV",
-  "description":"A cricket discovery page from Match Dekho with information about cricket coverage, sports channels and match-day viewing.",
-  "isPartOf":{"@type":"WebSite","name":"Match Dekho"}
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Match Dekho",
+  "description": "A directory-style website for browsing live TV channels, including sports, cricket coverage, news, movies and entertainment.",
+  "inLanguage": "en",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Match Dekho"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I watch live cricket on Match Dekho?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Match Dekho lets visitors browse available sports and cricket-related TV channels. Whether a live match is available depends on the broadcaster, its schedule, your region and stream permissions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Match Dekho free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Browsing the Match Dekho channel directory is free. Individual channels may have their own access requirements, subscriptions, regional limits or other broadcaster conditions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is a live channel not playing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A channel may be offline, have changed its stream address, be restricted in your region, or prevent playback on third-party websites. Try another channel or use the broadcaster's official app or website."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Match Dekho host TV broadcasts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Match Dekho provides a channel-browsing interface. Channel availability and playback are controlled by the relevant stream provider or broadcaster."
+      }
+    }
+  ]
 }
 </script>
 </head>
 <body>
 <header class="topbar">
-  <a class="brand" href="../" aria-label="Match Dekho home">
+  <a class="brand" href="#home" aria-label="Match Dekho home">
     <span class="brand-mark">▶</span>
-    <span class="brand-copy"><strong>Match <em>Dekho</em></strong><small>Cricket &amp; Live TV Discovery</small></span>
+    <span class="brand-copy"><strong>Match <em>Dekho</em></strong><small>Watch Live Channels · Anytime, Anywhere</small></span>
   </a>
+  <div class="top-actions">
+    <button class="round-btn" id="searchToggle" aria-label="Search">⌕</button>
+    <button class="avatar" aria-label="Profile">MD</button>
+  </div>
 </header>
+
 <main id="home">
   <section class="hero">
+    <div class="hero-art" aria-hidden="true">
+      <div class="red-mist"></div><div class="energy energy-one"></div><div class="energy energy-two"></div>
+      <div class="anime-figure"><div class="hair"></div><div class="face"><i class="mark mark-a"></i><i class="mark mark-b"></i><i class="eye"></i><i class="smile"></i></div><div class="coat"></div></div>
+    </div>
     <div class="hero-shade"></div>
     <div class="hero-copy">
-      <span class="live-pill">🏏 CRICKET DISCOVERY</span>
-      <h1>Sukuna<span>Cricket</span></h1>
-      <h2>Cricket coverage and sports TV on <span>Match Dekho</span></h2>
-      <p>Explore available sports channels, follow match-day coverage and check official broadcaster schedules.</p>
-      <a class="primary-btn" href="../#live" style="display:inline-block;text-decoration:none">Explore Channels ▶</a>
+      <span class="live-pill">◉ &nbsp; LIVE TV ONLY</span>
+      <h1>Match <b>Dekho</b></h1>
+      <h2>Live Cricket, Sports &amp; <span>TV Channels</span></h2>
+      <p>Explore sports, cricket coverage, news, movies and entertainment channels in one place.</p>
+      <button class="primary-btn" id="exploreBtn">Explore Live <span>▶</span></button>
     </div>
   </section>
-  <section class="seo-info">
-    <h2>What is SukunaCricket?</h2>
-    <p>SukunaCricket is a cricket-focused discovery section of Match Dekho. It helps visitors find sports channel listings and information related to cricket coverage. Search for cricket live, live cricket match today, cricket sports channels or match updates, then check the broadcaster's schedule and availability.</p>
-    <h3>Find cricket and sports channels</h3>
-    <p>Browse the sports category on Match Dekho to see available channel listings. Channel availability changes and a listing does not guarantee that a particular match, tournament or broadcast is currently live.</p>
-    <h3>Watch through authorized broadcasters</h3>
-    <p>Live sports rights vary by country, competition and broadcaster. Some streams may be offline, region-restricted, subscription-based or unavailable for playback on third-party websites. When a channel does not play, use the broadcaster's official website or app and follow its access terms.</p>
-    <h3>Explore Match Dekho</h3>
-    <p>Match Dekho also lists news, movies, entertainment, kids and music channels. Return to the <a href="../">Match Dekho homepage</a> to browse channel categories and search available listings.</p>
+
+  <section class="category-strip" aria-label="Browse live TV channel categories">
+    <button class="category active" data-filter="all"><span>◉</span>All<br>Channels</button>
+    <button class="category" data-filter="sports"><span>⚽</span>Sports</button>
+    <button class="category" data-filter="news"><span>▤</span>News</button>
+    <button class="category" data-filter="movies"><span>🎬</span>Movies</button>
+    <button class="category" data-filter="entertainment"><span>▣</span>Entertain-<br>ment</button>
+    <button class="category" data-filter="kids"><span>🧒</span>Kids</button>
+    <button class="category" data-filter="music"><span>♫</span>Music</button>
+  </section>
+
+  <section class="channel-section" id="live" aria-labelledby="channelsTitle">
+    <div class="section-heading"><h2 id="channelsTitle"><i>◉</i> Browse Live TV Channels</h2><button id="viewAll">View All <b>→</b></button></div>
+    <p class="channel-count" id="channelCount" aria-live="polite">Loading channel list…</p>
+    <div class="channel-grid" id="channelGrid">
+      <div class="loading-card">Finding live channels…</div>
+    </div>
+    <p class="empty-state" id="emptyState" hidden>No channels found in this category.</p>
+  </section>
+
+
+  <section class="seo-info" aria-labelledby="aboutMatchDekho">
+    <h2 id="aboutMatchDekho">Watch Live Cricket, Sports and TV Channels on Match Dekho</h2>
+    <p>Match Dekho helps you discover live TV channels across sports, cricket coverage, news, movies, entertainment, kids and music. Browse the channel categories, search for a channel by name, and select an available stream to open the player. Channel listings and live availability can change at any time.</p>
+    <h3>Find cricket and sports coverage</h3>
+    <p>Looking for cricket live coverage, live sports channels or match-day broadcasts? Start with the Sports category and check the channel schedule. Match Dekho does not guarantee that every cricket match or tournament is available. Broadcast rights, regional restrictions and the broadcaster's schedule determine what can be watched.</p>
+    <h3>More live TV categories</h3>
+    <p>Explore news channels for current affairs, movie channels for films, entertainment channels for shows, kids channels for family viewing and music channels for music programming. Use search to find a channel faster.</p>
+    <h3>Streaming availability and support</h3>
+    <p>Some streams may not play because a broadcaster has taken them offline, changed its stream address, restricted access by location, or disabled playback on external websites. If a channel does not load, try another listing or watch through the broadcaster's official service. Match Dekho does not bypass subscriptions, geographic restrictions or access controls.</p>
+  </section>
+
+  <section class="seo-faq" aria-labelledby="faqTitle">
+    <h2 id="faqTitle">Frequently Asked Questions</h2>
+    <details><summary>Can I watch live cricket on Match Dekho?</summary><p>You can browse available sports and cricket-related channels. Live match availability depends on the broadcaster, match schedule, region and stream permissions.</p></details>
+    <details><summary>Is Match Dekho free?</summary><p>Browsing the channel directory is free. Some broadcasters may require a subscription, account or access in a supported region.</p></details>
+    <details><summary>Why is a channel not playing?</summary><p>The stream may be offline, changed, region-restricted or blocked from third-party playback. Try another channel or use the broadcaster's official app or website.</p></details>
+    <details><summary>Can I watch every cricket tournament here?</summary><p>No. Match Dekho cannot guarantee every tournament, match or channel. Availability depends on broadcast rights and the channel's live schedule.</p></details>
+  </section>
+
+
+  <section class="seo-info" aria-labelledby="sukunaCricketTitle">
+    <h2 id="sukunaCricketTitle">Discover SukunaCricket on Match Dekho</h2>
+    <p><a href="sukunacricket/">SukunaCricket</a> is a Match Dekho cricket discovery page for visitors looking for cricket coverage, sports channels and match-related viewing information. Check available listings and broadcaster schedules; a live match is not guaranteed to be available.</p>
   </section>
 </main>
-<footer class="seo-info"><p>© Match Dekho · SukunaCricket</p></footer>
+
+<nav class="bottom-nav" aria-label="Main navigation">
+  <button class="nav-item selected" data-tab="home"><span>◆</span>Home</button>
+  <button class="nav-item" data-tab="live"><span>▣</span>Live TV</button>
+  <button class="nav-item" data-tab="favorites"><span>★</span>Favorites</button>
+  <button class="nav-item" data-tab="profile"><span>●</span>Profile</button>
+  <button class="nav-item" data-tab="settings"><span>⚙</span>Settings</button>
+</nav>
+
+<div class="search-panel" id="searchPanel">
+  <div class="search-inner"><input id="searchInput" type="search" placeholder="Search live channels…"><button id="closeSearch">✕</button></div>
+</div>
+
+<div class="player" id="player" aria-hidden="true">
+  <div class="player-box">
+    <div class="player-top"><span class="on-air">● LIVE</span><strong id="playerName">Channel</strong><button id="closePlayer" aria-label="Close player">✕</button></div>
+    <video id="video" controls playsinline></video>
+    <div class="player-caption">MATCH DEKHO <span>LIVE BROADCAST</span></div>
+    <p class="player-error" id="playerError" role="status"></p><button class="primary-btn" id="retryPlayer" type="button" hidden>Retry stream ↻</button>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js" crossorigin="anonymous"></script>
+<script src="app.js"></script>
 </body>
 </html>
